@@ -28,6 +28,10 @@ async function deleteUser(id) {
   return Users.deleteOne({ _id: id });
 }
 
+async function loginUser(){
+  return Users.find({});
+}
+
 module.exports = {
   getUsers,
   getUser,
@@ -36,4 +40,5 @@ module.exports = {
   updateUser,
   changePassword,
   deleteUser,
+  loginUser,
 };

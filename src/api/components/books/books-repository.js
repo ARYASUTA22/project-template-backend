@@ -10,5 +10,4 @@ async function create(title) {
 
 module.exports = {
   getBooks,
-  create,
 };
